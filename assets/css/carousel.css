@@ -1,0 +1,48 @@
+/* .carousel-container{
+    display: flex;
+    justify-content: center;
+} */
+
+.gallery {
+  /* background: #EEE; */
+}
+
+.gallery-cell {
+  max-width:100%;
+  /* max-height: 800px; */
+  /* margin-right: 10px; */
+  background: none;
+  /* counter-increment: gallery-cell; */
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(gallery-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  color: black;
+}
+
+.project1, .project2, .project3{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.proj-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.proj-img img{
+    max-width: 100%;
+}
+
+.proj-notes{
+    min-width: 80%;
+}

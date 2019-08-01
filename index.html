@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet"
 			href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="assets/css/flickity.css">
+		<link rel="stylesheet" href="assets/css//carousel.css">
 
 	</head>
 	<body class="is-preload">
@@ -95,60 +97,70 @@
 					</div>
 				</section>
 
-				<!-- Portfolio -->
+
 					<section id="portfolio" class="three">
 						<div class="container">
-
 							<header>
 								<h2>Projects</h2>
 							</header>
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item item1">
-										<a href="https://fundit-aa-sf-may-19.herokuapp.com/#/" target="_blank" class="image fit">
-										<div class="project-overlay">
-											<h3>FundIt!</h3>
-											<div class="project1-desc">A picture-perfect clone of kickstarter.com. Built with
-												Ruby on Rails, PostgreSQL, JavaScript, and React</div>
-										</div>
+							<div class="gallery js-flickity" data-flickity-options='{ 
+								"wrapAround": true, 
+								"draggable": false, 
+								"prevNextButtons": false
+							}'>
+								<div class="gallery-cell project1">
+									<div class="proj-img">
 										<img src="images/fundit.png" alt="" />
-										</a>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item item2">
-										<a href="https://typefighter.herokuapp.com" target="_blank" class="image fit">
-											<div class="project-overlay">
-												<h3>TypeFighter</h3>
-												<div class="project2-desc"> 
-													A multiplayer typing game. Built with 
-													MongoDB, Express, React, Node (MERN)
-												</div>
-											</div>
-											<img src="images/typefighter.png" alt="" />
-										</a>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item item3">
-										<a href="https://sjaisongyoon.github.io/NBAShotDistances/" target="_blank" class="image fit">
-										<div class="project-overlay">							
-											<h3> NBA Shot Attempt Distance </h3>
-											<div class="project2-desc">
-												Custom chart using d3.js showing 
-												the change in average NBA shot attempt 
-												distance over the past 23 seasons
-											</div>
-											<div class="project3-desc">
+									</div>
+									<div class="proj-notes">
+										<h3>FundIt!</h3>
+										<p>
+											A picture-perfect clone of kickstarter.com. 
+											Built with Ruby on Rails, PostgreSQL,
+											 JavaScript, and React
+										</p>
 
-											</div>
-										</div>
+										<a href="https://fundit-aa-sf-may-19.herokuapp.com/#/" target="_blank">Live</a> | 
+										<a href="https://github.com/sjaisongyoon/FundIt" target="_blank">Repo</a>
+									</div>
+								</div>
+
+								<div class="gallery-cell project2">
+									<div class="proj-img">
+										<img src="images/typefighter.png" alt="" />
+									</div>
+									<div class="proj-notes">
+										<h3>TypeFighter</h3>
+										<p>
+											A multiplayer typing game. Built with
+											MongoDB, Express, React, Node (MERN)
+										</p>
+
+										<a href="https://typefighter.herokuapp.com" target="_blank">Live</a> |
+										<a href="https://github.com/sjaisongyoon/Typin-Strikin-Robots" target="_blank">Repo</a>
+									</div>
+
+								</div>
+
+								<div class="gallery-cell project3">
+									<div class="proj-img">
 										<img src="images/nbashot.png" alt="" />
-									</a>
-									</article>
+									</div>
+									<div class="proj-notes">
+										<h3> NBA Shot Attempt Distance </h3>
+										<p>
+											Custom chart using d3.js to show
+											the change in the average NBA shot attempt
+											distance over the past 23 seasons
+										</p>
+									
+										<a href="https://sjaisongyoon.github.io/NBAShotDistances/" target="_blank">Live</a> | 
+										<a href="https://github.com/sjaisongyoon/NBAShotDistances" target="_blank">Repo</a>
+										
+									</div>			
 								</div>
-							</div>
 
+							</div>
 						</div>
 					</section>
 
@@ -224,6 +236,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/flickity.pkgd.min.js"></script>
 	</body>
 </html>
