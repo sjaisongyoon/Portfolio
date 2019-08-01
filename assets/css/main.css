@@ -1755,14 +1755,14 @@ input, select, textarea {
 		}
 
 		.image.avatar48 {
-			width: 48px;
-			height: 48px;
+			width: 60px;
+			height: 60px;
 			background: #f00;
 		}
 
 			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+				width: 60px;
+				height: 60px;
 			}
 
 		.image.fit {
@@ -2065,6 +2065,10 @@ input, select, textarea {
 			-ms-flex-grow: 1;
 			flex-grow: 1;
 		}
+		#top {
+		text-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+
+		}
 
 		#header .bottom {
 			-moz-flex-shrink: 0;
@@ -2079,8 +2083,10 @@ input, select, textarea {
 			}
 
 		#header .icons {
-			font-size: 0.8em;
-			text-align: center;
+			font-size: 1.0em;
+			text-align: right;
+			margin-bottom: 0;
+			margin-top: .5em;
 		}
 
 			#header .icons a {
@@ -2124,6 +2130,7 @@ input, select, textarea {
 			left: 0;
 			top: 0;
 		}
+
 
 	#nav ul {
 		list-style: none;
@@ -2272,6 +2279,7 @@ input, select, textarea {
 	/* #portfolio h2, #portfolio h3{
 		text-align: center;
 	} */
+
 	.project-overlay{
 		display: flex;
 		position: absolute;
@@ -2286,7 +2294,7 @@ input, select, textarea {
 		cursor: pointer;
 		flex-direction: column;
 		justify-content: center;
-		padding: 0px 20px;
+		padding: 20px 20px 0 20px;
 		flex-wrap: nowrap;
 		z-index: 1;
 	}
@@ -2305,6 +2313,9 @@ input, select, textarea {
 	.item2 .project-overlay{
 		background-color: rgb(61,153,112, .9)
 	}
+	.item3 .project-overlay{
+		background-color: rgb(133,20,75, .9)
+	}
 	.project-overlay:hover{
 		box-shadow: 0 0 10px black;
 		/* background-color: rgb(220, 220, 220, .70); */
@@ -2314,8 +2325,8 @@ input, select, textarea {
 		position: relative;
 	}
 	
-	.project-overlay:hover+a img{
-		opacity: .05;
+	.project-overlay:hover+img{
+		opacity: .1;
 	}
 	.project1-desc, .project2-desc{
 		vertical-align: middle;
@@ -2326,13 +2337,30 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.item2 .project-overlay:hover+img{
+		opacity: .05;
+	}
 
-	
+	.item3 img{
+		opacity: .7;
+	}
 	.item2 img{
 		opacity: .3;
 	}
-	.item2 .project-overlay:hover+a img{
+	.item2 .project-overlay:hover+img{
 		opacity: .15;
+	}
+
+	.icon-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.icon-container i{
+		font-size: 4rem;
+		padding: 2rem;
 	}
 
 
@@ -2365,6 +2393,11 @@ input, select, textarea {
 				margin-left: 300px;
 			}
 
+			.icon-container i{
+				font-size: 4.5rem;
+				padding: 2rem;
+			}
+
 	}
 
 /* Normal */
@@ -2379,6 +2412,11 @@ input, select, textarea {
 
 			#main section.cover {
 				padding: 5em 0;
+			}
+
+			.icon-container i{
+				font-size: 4.5rem;
+				padding: 2rem;
 			}
 
 	}
@@ -2401,6 +2439,10 @@ input, select, textarea {
 
 			ul.icons li a {
 				width: 1.75em;
+			}
+			.icon-container i{
+				font-size: 3rem;
+				padding: 1.5rem;
 			}
 
 		/* Item */
@@ -2480,6 +2522,10 @@ input, select, textarea {
 
 			.item {
 				margin-bottom: 15px;
+			}
+			.icon-container i{
+				font-size: 2rem;
+				padding: 1rem;
 			}
 
 		/* Icons */
@@ -2674,6 +2720,10 @@ input, select, textarea {
 			ul.icons a {
 				width: 2em;
 				font-size: 1.25em;
+			}
+			.icon-container i{
+				font-size: 2rem;
+				padding: 1rem;
 			}
 
 		/* Main */
