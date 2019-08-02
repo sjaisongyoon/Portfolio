@@ -101,8 +101,7 @@
 							</header>
 							<div class="gallery js-flickity" data-flickity-options='{ 
 								"wrapAround": true, 
-								"draggable": false, 
-								"prevNextButtons": false
+								"draggable": false 
 							}'>
 								<div class="gallery-cell project1">
 									<div class="proj-img">
@@ -196,10 +195,13 @@
 								<h2>Contact</h2>
 							</header>
 
-							<form method="post" action="#">
+							<form method="POST" action="https://formsubmit.co/sjaisongyoon@gmail.com" >
 								<div class="row">
 									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<input type="hidden" name="_subject" value="New Submission From Portfolio!">
+									<input type="hidden" name="_next" value="http://samjyoon.com">
+									<input type="text" name="_honey" style="display:none">
 									<div class="col-12">
 										<textarea name="message" placeholder="Message"></textarea>
 									</div>
