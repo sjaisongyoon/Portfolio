@@ -37,12 +37,36 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .proj-img img{
-    max-width: 100%;
+  max-width: 100%;
+  max-height: 60vh;
 }
 
 .proj-notes{
     min-width: 80%;
+    margin-bottom: 20px;
+}
+.proj-notes p{
+  margin-bottom: 0;
+}
+
+/* no circle */
+.flickity-button {
+  background: transparent;
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: black;
+}
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
 }
